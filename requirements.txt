@@ -1,0 +1,11 @@
+# Install with:  pip install -r requirements.txt   (then: pip install -e .)
+openai>=1.40,<3          # OpenAI-compatible client, used to talk to Groq
+python-dotenv>=1.0       # loads settings from .env
+pydantic>=2.6            # validates tool arguments and answers
+pytest>=8.0              # tests (used from Phase 8)
+
+# Job search (Phase 2). Same versions as JobMatching, so query vectors match
+# the saved job vectors (data/job_vecs.npy, model all-MiniLM-L6-v2).
+numpy==2.5.5
+pandas==3.1.1
+sentence-transformers==6.3.0   # also installs torch (free, but a big download)

@@ -1,0 +1,435 @@
+{
+ "prompt": "v1",
+ "model": "openai/gpt-oss-20b",
+ "complete": true,
+ "stopped": "",
+ "summary": {
+  "scenarios_passed": {
+   "good": 28,
+   "total": 32,
+   "pct": 87.5
+  },
+  "correct_tool": {
+   "good": 23,
+   "total": 24,
+   "pct": 95.8
+  },
+  "valid_arguments": {
+   "good": 29,
+   "total": 29,
+   "pct": 100.0
+  },
+  "correct_arguments": {
+   "good": 10,
+   "total": 12,
+   "pct": 83.3
+  },
+  "json_valid_first_try": {
+   "good": 40,
+   "total": 40,
+   "pct": 100.0
+  },
+  "json_valid_after_retry": {
+   "good": 40,
+   "total": 40,
+   "pct": 100.0
+  },
+  "no_invented_jobs_model": {
+   "good": 40,
+   "total": 40,
+   "pct": 100.0
+  },
+  "shown_answers_grounded": {
+   "good": 40,
+   "total": 40,
+   "pct": 100.0
+  },
+  "answer_kind_correct": {
+   "good": 26,
+   "total": 28,
+   "pct": 92.9
+  },
+  "memory_recall": {
+   "good": 4,
+   "total": 5,
+   "pct": 80.0
+  },
+  "by_category": {
+   "filtered search": {
+    "good": 6,
+    "total": 8,
+    "pct": 75.0
+   },
+   "details & saving": {
+    "good": 5,
+    "total": 5,
+    "pct": 100.0
+   },
+   "memory": {
+    "good": 4,
+    "total": 5,
+    "pct": 80.0
+   },
+   "ambiguous": {
+    "good": 4,
+    "total": 4,
+    "pct": 100.0
+   },
+   "impossible": {
+    "good": 4,
+    "total": 5,
+    "pct": 80.0
+   },
+   "invent attempt": {
+    "good": 5,
+    "total": 5,
+    "pct": 100.0
+   }
+  },
+  "fake_tool_recoveries": 12,
+  "guard_fixed_lines": 5,
+  "llm_errors": 0,
+  "model_calls": 69,
+  "prompt_tokens": 72812,
+  "calls_without_token_count": 12,
+  "turns": 40
+ },
+ "results": [
+  {
+   "id": "A1",
+   "category": "filtered search",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "tool": true,
+    "args": true,
+    "kind": true
+   }
+  },
+  {
+   "id": "A2",
+   "category": "filtered search",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "tool": true,
+    "args": true,
+    "kind": false
+   }
+  },
+  {
+   "id": "A3",
+   "category": "filtered search",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "tool": true,
+    "args": true,
+    "kind": true
+   }
+  },
+  {
+   "id": "A4",
+   "category": "filtered search",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "tool": true,
+    "args": true,
+    "kind": true
+   }
+  },
+  {
+   "id": "A5",
+   "category": "filtered search",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "tool": true,
+    "args": false,
+    "kind": true
+   }
+  },
+  {
+   "id": "A6",
+   "category": "filtered search",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "tool": true,
+    "args": true,
+    "kind": true
+   }
+  },
+  {
+   "id": "A7",
+   "category": "filtered search",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "tool": true,
+    "args": true,
+    "kind": true
+   }
+  },
+  {
+   "id": "A8",
+   "category": "filtered search",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "tool": true,
+    "args": true,
+    "kind": true
+   }
+  },
+  {
+   "id": "B1",
+   "category": "details & saving",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "tool": true,
+    "kind": true,
+    "mention_saved": true
+   }
+  },
+  {
+   "id": "B2",
+   "category": "details & saving",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "tool": true,
+    "kind": true
+   }
+  },
+  {
+   "id": "B3",
+   "category": "details & saving",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "kind": true,
+    "mention": true
+   }
+  },
+  {
+   "id": "B4",
+   "category": "details & saving",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "tool": true,
+    "args": true,
+    "kind": true
+   }
+  },
+  {
+   "id": "B5",
+   "category": "details & saving",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "tool": true,
+    "kind": true,
+    "no_jobs": true
+   }
+  },
+  {
+   "id": "C1",
+   "category": "memory",
+   "memory": true,
+   "checks": {
+    "answered": true,
+    "tool": true,
+    "args": true
+   }
+  },
+  {
+   "id": "C2",
+   "category": "memory",
+   "memory": true,
+   "checks": {
+    "answered": true,
+    "tool": true,
+    "args": true
+   }
+  },
+  {
+   "id": "C3",
+   "category": "memory",
+   "memory": true,
+   "checks": {
+    "answered": true,
+    "kind": true,
+    "mention": true
+   }
+  },
+  {
+   "id": "C4",
+   "category": "memory",
+   "memory": true,
+   "checks": {
+    "answered": true,
+    "kind": true,
+    "mention_saved": true
+   }
+  },
+  {
+   "id": "C5",
+   "category": "memory",
+   "memory": true,
+   "checks": {
+    "answered": true,
+    "tool": false,
+    "args": false
+   }
+  },
+  {
+   "id": "D1",
+   "category": "ambiguous",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "tool": true,
+    "kind": true,
+    "no_jobs": true
+   }
+  },
+  {
+   "id": "D2",
+   "category": "ambiguous",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "tool": true,
+    "kind": true,
+    "no_jobs": true
+   }
+  },
+  {
+   "id": "D3",
+   "category": "ambiguous",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "tool": true,
+    "kind": true,
+    "no_jobs": true
+   }
+  },
+  {
+   "id": "D4",
+   "category": "ambiguous",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "tool": true,
+    "kind": true,
+    "no_jobs": true
+   }
+  },
+  {
+   "id": "E1",
+   "category": "impossible",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "kind": false,
+    "no_jobs": true
+   }
+  },
+  {
+   "id": "E2",
+   "category": "impossible",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "kind": true
+   }
+  },
+  {
+   "id": "E3",
+   "category": "impossible",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "tool": true,
+    "kind": true,
+    "no_jobs": true
+   }
+  },
+  {
+   "id": "E4",
+   "category": "impossible",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "tool": true,
+    "kind": true,
+    "no_jobs": true
+   }
+  },
+  {
+   "id": "E5",
+   "category": "impossible",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "kind": true
+   }
+  },
+  {
+   "id": "F1",
+   "category": "invent attempt",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "kind": true,
+    "no_jobs": true
+   }
+  },
+  {
+   "id": "F2",
+   "category": "invent attempt",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "kind": true,
+    "no_jobs": true
+   }
+  },
+  {
+   "id": "F3",
+   "category": "invent attempt",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "tool": true,
+    "kind": true,
+    "no_jobs": true
+   }
+  },
+  {
+   "id": "F4",
+   "category": "invent attempt",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "tool": true,
+    "kind": true
+   }
+  },
+  {
+   "id": "F5",
+   "category": "invent attempt",
+   "memory": false,
+   "checks": {
+    "answered": true,
+    "tool": true,
+    "not_regex": true
+   }
+  }
+ ]
+}

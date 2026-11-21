@@ -1,0 +1,39 @@
+# Secrets - never commit
+.env
+
+# Python virtual environment and caches
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# Local databases (memory, saved jobs)
+*.db
+*.sqlite
+
+# LLM / live API response caches
+cache/
+.cache/
+eval/cache/
+
+# Editor / OS clutter
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# India jobs dataset: no license stated, so it is NOT committed.
+# Users download it themselves and run: python scripts/prepare_india.py
+data/india__jobs/
+data/jobs_india.csv
+data/job_vecs_india.npy
+
+# Personal working notes (kept on disk, not published)
+CLAUDE.md
+OVERNIGHT_REPORT.md
+TEST_RUN.md
+DECISIONS.md
+
+# Editor / assistant settings
+.claude/
